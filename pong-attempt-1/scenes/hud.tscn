@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://d3xgu72rlfr1k"]
+
+[ext_resource type="Script" uid="uid://bcvivlalrsbx8" path="res://scripts/hud.gd" id="1_ahhtf"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_toqtt"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_625hm"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_54pwq"]
+
+[node name="hud" type="Control" unique_id=982668231]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ahhtf")
+
+[node name="MoveArea" type="TextureRect" parent="." unique_id=798768748]
+modulate = Color(0.35906908, 0.35906908, 0.35906908, 1)
+layout_mode = 0
+offset_left = 50.0
+offset_right = 250.0
+offset_bottom = 648.0
+texture = SubResource("CanvasTexture_toqtt")
+
+[node name="MoveLabel" type="Label" parent="MoveArea" unique_id=1688614324]
+modulate = Color(0.41598022, 0.41598052, 0.4159804, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -45.0
+offset_right = 82.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Move mouse in 
+here to move 
+paddle"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartLabel" type="Label" parent="." unique_id=1499904152]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.0
+offset_top = -52.0
+offset_right = 77.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Press LMB to start..."
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1156147369]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 40.0
+texture = SubResource("CanvasTexture_625hm")
+
+[node name="PlayerScoreLabel" type="Label" parent="." unique_id=1323371412]
+layout_mode = 0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 31.0
+text = "Player: 999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnemyScoreLabel" type="Label" parent="." unique_id=314245676]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_top = 8.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Enemy: 999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterLine" type="TextureRect" parent="." unique_id=1261025283]
+modulate = Color(1, 1, 1, 0.12156863)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -8.0
+offset_top = 40.0
+offset_right = 8.0
+offset_bottom = 648.0
+grow_horizontal = 2
+texture = SubResource("CanvasTexture_54pwq")

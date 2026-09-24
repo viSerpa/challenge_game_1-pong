@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bidbjc6xado8j"]
+
+[ext_resource type="Script" uid="uid://dmu72oqj5ndnb" path="res://scripts/enemy_paddle.gd" id="1_ip5qg"]
+[ext_resource type="Texture2D" uid="uid://mte4of2kkr00" path="res://icon.svg" id="2_lqtdh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_625hm"]
+size = Vector2(16, 128)
+
+[node name="EnemyPaddle" type="CharacterBody2D" unique_id=2013819092]
+script = ExtResource("1_ip5qg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1406145597]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.125, 1)
+texture = ExtResource("2_lqtdh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2103056003]
+shape = SubResource("RectangleShape2D_625hm")
