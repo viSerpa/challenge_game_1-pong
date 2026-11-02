@@ -11,7 +11,8 @@ Controls:
 - Left click to start.
 - Move mouse in grey area to move Paddle / Player.
 
-Objective: Score more points against the opponent.
+Objective: 
+- Score more points against the opponent.
 
 ## Setup & Installation
 Prerequisites: Godot version 4.7 or later.
