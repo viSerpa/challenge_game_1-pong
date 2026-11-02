@@ -15,9 +15,9 @@ Objective:
 - Score more points against the opponent.
 
 ## Setup & Installation
-Prerequisites: Godot version 4.7 or later.
-Clone the repo: https://github.com/viSerpa/challenge_game_1-pong.git
-Run the game: Press F5 to play game.
+- **Prerequisites**: Godot version 4.7 or later.
+- **Clone the repo**: https://github.com/viSerpa/challenge_game_1-pong.git
+- **Run the game**: Press F5 to play game.
 
 ## What I Learned
 - **Dead-Zone AI Logic:** Solved an erratic "jittering" bug in the enemy AI paddle by implementing a dead zone threshold, preventing continuous back-and-forth adjustments and creating smoother, more human-like tracking behavior.
